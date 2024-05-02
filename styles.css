@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Inter-Variable";
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format("truetype");
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+    --green: hsl(75, 94%, 57%);
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: var(--off-black);
+    color: var(--white);
+    font-size: 16px;
+    text-align: center;
+    font-family: "Inter-Variable";
+    font-weight: 400;
+}
+
+body {
+    max-width: 364px;
+    padding: 2.5em;
+    background-color: var(--dark-grey);
+    border-radius: 0.75em;
+    margin: 10em auto;
+}
+
+img {
+    border-radius: 50%;
+    height: 90px;
+}
+
+h1 {
+    font-weight: 600;
+    margin: 0.146em;
+}
+
+p {
+    margin: 0;
+}
+
+section {
+    margin-bottom: 1.5em;
+}
+
+#location {
+    color: var(--green);
+    font-weight: 600;
+    margin-top: 0.25em;
+}
+
+.links {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.buttons {
+    width: 100%;
+    background-color: var(--grey);
+    border: 0;
+    margin-bottom: 1em;
+    padding: 0.75em;
+    border-radius: 0.5em;
+    color: var(--white);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+}
+
+#last {
+    margin: 0;
+}
+
+.buttons:hover {
+    background-color: var(--green);
+    color: var(--dark-grey);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        max-width: 279px;
+        padding: 1.5em;
+    }
+}
